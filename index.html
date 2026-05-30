@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SequoiaArch | Sustainable Architecture & Design</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sequoia: {
+                            deep: '#1C352D',
+                            earth: '#2C2523',
+                            alabaster: '#F9F8F6',
+                            clay: '#C86A4B'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-sequoia-alabaster text-sequoia-earth font-sans antialiased">
+
+    <!-- Header / Navigation -->
+    <header class="fixed w-full z-50 bg-sequoia-alabaster/80 backdrop-blur-md border-b border-sequoia-earth/5">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold tracking-widest text-sequoia-deep uppercase">SequoiaArch</a>
+            <nav class="hidden md:flex space-x-10 text-sm font-medium tracking-wider uppercase">
+                <a href="#" class="hover:text-sequoia-clay transition-colors">Work</a>
+                <a href="#" class="hover:text-sequoia-clay transition-colors">Studio</a>
+                <a href="#" class="hover:text-sequoia-clay transition-colors">Sustainability</a>
+                <a href="#" class="hover:text-sequoia-clay transition-colors">Contact</a>
+            </nav>
+            <button class="md:hidden text-sequoia-earth focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center bg-sequoia-deep overflow-hidden">
+        <!-- Background Overlay / Image Placeholder -->
+        <div class="absolute inset-0 bg-gradient-to-r from-sequoia-earth/80 to-sequoia-deep/70 z-10"></div>
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center opacity-60"></div>
+        
+        <div class="relative z-20 max-w-5xl mx-auto text-center px-6 text-white">
+            <span class="text-xs font-semibold tracking-widest uppercase text-sequoia-clay bg-white/10 px-3 py-1 rounded-full backdrop-blur-sm">Architecture & Design Studio</span>
+            <h1 class="mt-6 text-4xl md:text-7xl font-light tracking-tight leading-none mb-6">
+                Rooted in Nature.<br><span class="font-normal italic text-sequoia-alabaster">Built for Generations.</span>
+            </h1>
+            <p class="max-w-xl mx-auto text-base md:text-lg text-sequoia-alabaster/80 font-light mb-8">
+                We craft sustainable, high-performance architectural systems that bridge the gap between organic contexts and modern structural design.
+            </p>
+            <a href="#work" class="inline-block border border-white text-white text-xs font-semibold tracking-widest uppercase px-8 py-4 hover:bg-white hover:text-sequoia-deep transition-all duration-300">
+                Explore Portfolio
+            </a>
+        </div>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+            <div class="md:col-span-5">
+                <span class="text-xs font-bold tracking-widest text-sequoia-clay uppercase block mb-2">Our Philosophy</span>
+                <h2 class="text-3xl md:text-4xl font-light tracking-tight text-sequoia-deep leading-tight">
+                    Architecture as an extension of the living landscape.
+                </h2>
+            </div>
+            <div class="md:col-span-7 text-sequoia-earth/80 font-light space-y-4 text-base md:text-lg">
+                <p>
+                    Just like the ancient Sequoia networks, our designs prioritize structural integrity, deep environmental integration, and resource efficiency. We leverage passive cooling strategies, mass timber, and climate-responsive envelopes to minimize carbon footprints.
+                </p>
+                <p>
+                    Every line drawn in our studio serves a dual purpose: achieving uncompromising modern utility while honoring the microclimate and community it inhabits.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Portfolio Grid -->
+    <section id="work" class="bg-sequoia-deep py-24 px-6 text-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <span class="text-xs font-bold tracking-widest text-sequoia-clay uppercase block mb-2">Selected Works</span>
+                    <h2 class="text-3xl md:text-4xl font-light tracking-tight">Featured Projects</h2>
+                </div>
+                <a href="#" class="text-xs font-semibold tracking-widest uppercase border-b border-white/40 pb-1 hover:text-sequoia-clay hover:border-sequoia-clay transition-all">View All</a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="group cursor-pointer">
+                    <div class="overflow-hidden bg-sequoia-earth aspect-[4/3] mb-4 relative">
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1000&q=80')] bg-cover bg-center group-hover:scale-105 transition-transform duration-500 opacity-90"></div>
+                    </div>
+                    <h3 class="text-xl font-medium tracking-tight mb-1">The Timber Pavilion</h3>
+                    <p class="text-sm text-sequoia-alabaster/60 font-light">Mass Timber / Passive Solar Design</p>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="group cursor-pointer">
+                    <div class="overflow-hidden bg-sequoia-earth aspect-[4/3] mb-4 relative">
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1000&q=80')] bg-cover bg-center group-hover:scale-105 transition-transform duration-500 opacity-90"></div>
+                    </div>
+                    <h3 class="text-xl font-medium tracking-tight mb-1">Monolith Residence</h3>
+                    <p class="text-sm text-sequoia-alabaster/60 font-light">Climate-Responsive Low Energy Housing</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-sequoia-earth text-sequoia-alabaster/40 text-xs py-12 px-6 border-t border-white/5">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <p>&copy; 2026 SequoiaArch. All rights reserved.</p>
+            <div class="flex space-x-6 uppercase tracking-wider">
+                <a href="#" class="hover:text-white transition-colors">Privacy</a>
+                <a href="#" class="hover:text-white transition-colors">Terms</a>
+                <a href="#" class="hover:text-white transition-colors">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
